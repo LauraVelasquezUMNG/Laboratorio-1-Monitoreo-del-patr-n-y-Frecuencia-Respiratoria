@@ -3,7 +3,7 @@
 ## Integrantes
 * Laura Valentina Velásquez Castiblanco (5600846)
 * Carlos Felipe Moreno Guzmán (5600881)
-* Juan Andrés Mateus Duran ()
+* Juan Andrés Mateus Duran (5600)
 
 ## Objetivos:
 * Identificar las principales variables físicas que intervienen en el proceso de la respiración.
