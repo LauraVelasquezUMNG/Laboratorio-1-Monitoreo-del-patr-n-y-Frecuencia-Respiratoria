@@ -5,10 +5,15 @@
 * Carlos Felipe Moreno Guzmán (5600881)
 * Juan Andrés Mateus Durán (5600787)
 
-## Objetivos:
-* Identificar las principales variables físicas que intervienen en el proceso de la respiración.
-* Diseñar un sistema capaz de captar el patrón respiratorio y calcular la frecuencia respiratoria.
-* Detectar tareas de habla o verbalización a partir del análisis del patrón respiratorio y/o su frecuencia.
+## Objetivos
+
+### Objetivo General
+Analizar cómo el hecho de hablar o verbalizar afecta el ritmo y comportamiento de la respiración de una persona.
+
+### Objetivos Específicos
+- Identificar las principales variables físicas que intervienen en el proceso de la respiración.
+- Diseñar un sistema capaz de captar el patrón respiratorio y calcular la frecuencia respiratoria.
+- Detectar tareas de habla o verbalización a partir del análisis del patrón respiratorio y/o su frecuencia.
 
 > ### Parte A
 
