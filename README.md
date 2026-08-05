@@ -57,9 +57,11 @@ Fig.2
 Con el fin de identificar el contenido espectral de la señal respiratoria, se aplicó la Transformada de Fourier a cada una de las señales adquiridas, obteniendo así su representación en el dominio de la frecuencia. En la Fig. 3 se presenta la representación en frecuencia correspondiente a la condición de reposo, donde el eje horizontal indica la frecuencia en Hz, mientras que el eje vertical corresponde a la potencia de la señal, graficada en escala semilogarítmica para facilitar la visualización del amplio rango dinámico presente en el espectro. De forma equivalente, en la Fig. 4 se muestra la representación en frecuencia obtenida para la condición de habla, manteniendo los mismos ejes descritos anteriormente.
 
 Fig.3
+
 <img width="964" height="637" alt="freposo" src="https://github.com/user-attachments/assets/afde5168-9ed6-42f5-b8ae-ae2f559c16b7" />
 
 Fig.4 
+
 <img width="964" height="637" alt="fhabla" src="https://github.com/user-attachments/assets/91f794fc-7526-41ff-8cdd-6f90a2940113" />
 
 
