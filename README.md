@@ -145,6 +145,9 @@ xlabel('Frecuencia (Hz)');
 ylabel('Potencia');
 title('Espectro de potencia - Reposo');
 ```
+> [!NOTE]
+> El proceso para la **señal de habla** es análogo al anteriormente enunciado.
+
 Así, la representación en frecuencia de las señales estudiadas se muestra en el apartado siguiente.
 
 #### **REPOSO**
@@ -156,6 +159,49 @@ Así, la representación en frecuencia de las señales estudiadas se muestra en 
 <img width="1373" height="912" alt="image" src="https://github.com/user-attachments/assets/7b84b937-55dd-42ba-b3f7-86bec2d64c49" />
 
 ### **5. Espectro Dominante - Frecuencia Respiratoria**
+
+Con el fin de determinar el ritmo respiratorio característico en ambas condiciones, se realizó la detección automática de los picos de máxima potencia en los espectros previamente calculados, mediante la siguiente estructura:
+
+```matlab
+%% Frecuencias Dominantes
+
+[~,idx_rep] = max(P_rep(2:end));
+idx_rep = idx_rep + 1;
+
+[~,idx_hab] = max(P_hab(2:end));
+idx_hab = idx_hab + 1;
+
+disp('----- FRECUENCIAS DOMINANTES -----')
+fprintf('Reposo: %.3f Hz\n',f_rep(idx_rep));
+fprintf('Habla: %.3f Hz\n',f_hab(idx_hab));
+```
+Se implementa la función `max()` sobre los vectores de las potencias (`P_rep` y `P_hab`) a partir del segundo elemento, evitando componentes DC indeseadas. Es necesario ajustar los índices (`idx + 1`), dado que la búsqueda omite el primer elemento, se suma $1$ para alinearlos correctamente con la posición real del vector de frecuencias (`f_rep` y `f_hab`).
+
+La obtención de la frecuencia respiratoria (RPM) emplea la frecuencia dominante $f_d$ encontrada para cada señal; simplemente se multiplica por $60$ siguiendo esta simple guía:
+
+$$f_d\left(\frac{respiraciones}{segundo}\right) \times 60\ \left(\frac{segundos}{minuto}\right) = 60f_d\left(\frac{respiraciones}{minuto}\right)$$
+
+En MATLAB, se implementó de la siguiente forma:
+
+```matlab
+%% Frecuencias Respiratorias
+
+disp('----- FRECUENCIAS RESPIRATORIAS -----');
+fprintf('Reposo: %.2f respiraciones/min\n',60*f_rep(idx_rep));
+fprintf('Habla: %.2f respiraciones/min\n',60*f_hab(idx_hab));
+```
+La frecuencia dominante $f_d$ se obtiene por medio de `f(idx)` para cada señal respectivamente, dónde se accede a la posición exacta dada por el índice previamente encontrado con la función `max()`.
+
+#### **RESULTADOS**
+Los datos numéricos visualizados en el _Command Window_ de MATLAB para la frecuencia dominante y la frecuencia respiratoria son los siguientes:
+
+#### **_Frecuencia Dominante_**
+* **Reposo:** $0.267\ Hz$
+* **Habla:** $0.067\ Hz$
+
+#### **_Frecuencia Respiratoria_**
+* **Reposo:** $16.00\ rpm$
+* **Habla:** $4.00\ rpm$
 
 > ### Parte C
 
