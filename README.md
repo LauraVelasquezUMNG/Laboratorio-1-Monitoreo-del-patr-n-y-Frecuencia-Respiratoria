@@ -34,6 +34,20 @@ Desde el punto de vista de la instrumentación biomédica, el proceso respirator
 
 * **Humedad del aire exhalado:** Durante la espiración aumenta la humedad relativa del aire debido al paso por las vías respiratorias. Los sensores de humedad permiten identificar el patrón respiratorio de manera no invasiva, aunque son más sensibles a las condiciones ambientales.
 
+Cada una de estas variables constituye en principio, una vía distinta para transducir la señal respiratoria a una magnitud eléctrica.
+
+#### Ancho de banda de las señales respiratorias
+
+
+
+### **2. Selección del sensor y construcción del sistema de adquisición**
+
+
+
+### **3. Visualización de la señal respiratoria en reposo y durante el habla**
+
+Una vez adquirida la señal respiratoria mediante el sistema descrito, se procedió a visualizar su comportamiento en el dominio del tiempo. En la Fig. 1 se presenta la señal correspondiente a la condición de reposo, donde el eje horizontal representa el tiempo transcurrido en segundos, durante la ventana de captura de 30 s establecida en la guía, mientras que el eje vertical corresponde al voltaje en voltios, de la señal respiratoria adquirida. De manera análoga, en la Fig. 2 se muestra la señal obtenida bajo la condición de habla, conservando los mismos ejes: tiempo en segundos en el eje horizontal y voltaje en voltios en el eje vertical.
+
 > ### Parte B
 En la presente sección, se aborda la etapa de adquisición temporizada en MATLAB y caracterización espectral de la señal respiratoria por medio del sistema desarrollado en la Parte A. Empleando el entorno de MATLAB, se registraron dos señales de 30 segundos en dos escenarios fisiológicos contrastantes; estado de **reposo** y durante **habla/lectura**. A partir de estas señales, se evalúa la necesidad de filtrado digital y se aplica la *Transformada Rápida de Fourier (FFT)* con el fin de identificar las frecuencias dominantes asociadas al patrón de respiración humana en cada condición. 
 
