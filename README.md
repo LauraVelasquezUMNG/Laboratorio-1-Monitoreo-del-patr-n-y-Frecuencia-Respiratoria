@@ -132,7 +132,7 @@ Este flujo se estructuró bajo las siguientes etapas:
 
 * **Cálculo del Espectro de Potencia:** Módulo de la FFT al cuadrado, normalizado entre el número total de puntos $\left(P(f)=\frac{|Y(f)|^2}{N}\right)$.
 
-* **Vector de frecuencias y simetría:** Construcción del eje de frecuencias partiendo de la frecuencia de muestreo $f_s=1000\ Hz$ y toma de la mitad positiva del espectro $(0$ a $\frac{f_s}{2}\ Hz)$. La función `floor()` redondea hacia el entero más cercano menor o igual al número original, evitando un error al recortar el vector de frecuencias.
+* **Vector de frecuencias y simetría:** Construcción del eje de frecuencias partiendo de la frecuencia de muestreo $f_s=1000\ Hz$ y toma de la mitad positiva del espectro $\left(0\ a\ \frac{f_s}{2}\ Hz\right)$. La función `floor()` redondea hacia el entero más cercano menor o igual al número original, evitando un error al recortar el vector de frecuencias.
 
 Para visualizar la representación en el dominio de la frecuencia, se graficó la PSD delimitando el rango visual de $0$ a $5\ Hz$, intervalo que abarca la totalidad de la banda de interés respiratorio humano, como se muestra en seguida:
 
