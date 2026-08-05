@@ -42,8 +42,8 @@ Para adquirir las señal respiratoria de carácter análogo proveniente de la co
 
 Posteriormente, en la interfaz de ***Analog Imput Recorder***, se configuró el tiempo de adquisición de las señales $T_s$ y la frecuencia de muestreo $f_s$ como se muestra a continuación:
 
-$$T_s=30s$$
-$$f_s=1 kHz$$
+$$T_s=30\ s$$
+$$f_s=1\ kHz$$
 
 Así, el número total de muestras capturadas fue $n=T_sf_s$:
 
@@ -101,6 +101,38 @@ Tras inspeccionar visualmente los registros en el dominio del tiempo, se determi
 Por ende, la calidad directa de la adquisición permitió proceder con el análisis espectral sin requerir etapas de filtrado digital.
 
 ### **4. Análisis en Frecuencia - Espectro Dominante**
+
+Para caracterizar el comportamiento espectral de las señales respiratorias, se procesaron los registros en reposo y durante el habla utilizando la _Transformada Rápida de Fourier (FFT)_ en MATLAB. A continuación, se presenta el procedimiento en MATLAB para obtener el espectro de potencia de la **señal de reposo:**
+
+```matlab
+% REPOSO
+
+% Eliminar componente DC
+senal_reposo = senal_reposo - mean(senal_reposo);
+
+% FFT
+N_rep = length(senal_reposo);
+Y_rep = fft(senal_reposo);
+
+% Espectro de potencia
+P_rep = abs(Y_rep).^2/N_rep;
+
+% Frecuencia
+f_rep = (0:N_rep-1)*(fs/N_rep);
+
+% Mitad positiva del espectro
+P_rep = P_rep(1:floor(N_rep/2));
+f_rep = f_rep(1:floor(N_rep/2));
+```
+Este flujo se estructuró bajo las siguientes etapas:
+
+* **Remoción de componente DC:** Resta del valor medio (`mean()`) para eliminar la desviación de voltaje continuo, con tal de evitar que la magnitud de $0\ Hz$ predomine ante las frecuencias fisiológicas de interés.
+  
+* **Cálculo FFT:** Obtención de la Transformada Discreta de Fourier por medio de la función `fft()`, utilizando la longitud total de muestras `N_rep`.
+
+* **Cálculo del Espectro de Potencia:** Módulo de la FFT al cuadrado, normalizado entre el número total de puntos $\left(P(f)=\frac{|Y(f)|^2}{N}\right)$.
+
+* **Vector de frecuencias y simetría:** Construcción del eje de frecuencias partiendo de la frecuencia de muestreo $f_s=1000\ Hz$ y toma de la mitad positiva del espectro $(0$ a $\frac{f_s}{2}\ Hz)$. La función `floor()` redondea al 
 
 > ### Parte C
 
