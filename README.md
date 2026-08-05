@@ -22,7 +22,17 @@ La respiración es el proceso fisiológico mediante el cual un organismo interca
 #### Variables físicas involucradas en el proceso respiratorio
 Desde el punto de vista de la instrumentación biomédica, el proceso respiratorio puede caracterizarse mediante diferentes cambios físicos que reflejan la mecánica de la respiración. Las principales variables físicas involucradas en este proceso son:
 
+* **Flujo de aire respiratorio:** Corresponde al volumen de aire que entra y sale de los pulmones por unidad de tiempo. Su medición permite determinar parámetros como el volumen corriente, la frecuencia respiratoria y el patrón ventilatorio. Esta variable puede ser medida mediante sensores de flujo o variaciones térmicas (termistores) en la corriente de aire.
 
+* **Movimiento torácico y abdominal:** Durante la inspiración, la contracción del diafragma y de los músculos intercostales hacen incrementar el volumen de la cavidad torácica, produciendo la expansión del tórax y, en menor medida, del abdomen. Durante la espiración ocurre el proceso contrario. Esta es una de las variables más utilizadas para el monitoreo no invasivo de la respiración, ya que puede medirse mediante bandas elásticas con sensores piezoeléctricos, sensores piezorresistivos, sensores de deformación, sensores capacitivos o sensores flexibles.
+
+* **Presión respiratoria:** Durante el ciclo respiratorio se producen cambios de presión entre el interior de los pulmones y la atmósfera. Estas diferencias de presión permiten el desplazamiento del aire y pueden registrarse mediante sensores de presión absoluta o diferencial, especialmente en sistemas de ventilación mecánica o estudios de función pulmonar.
+
+* **Temperatura del aire respirado:** El aire exhalado posee una temperatura cercana a la corporal, mientras que el aire inspirado normalmente se encuentra a temperatura ambiente. Esta diferencia puede utilizarse para detectar cada ciclo respiratorio mediante termistores o sensores digitales de temperatura ubicados cerca de la nariz o la boca.
+
+* **Concentración de dióxido de carbono (CO₂):** Corresponden las diferencias en concentración de CO₂ presentes en el ciclo respiratorio. El aire exhalado contiene una concentración de CO₂ considerablemente mayor que el aire inspirado. Esta variable se mide mediante capnografía y proporciona información sobre la ventilación alveolar.
+
+* **Humedad del aire exhalado:** Durante la espiración aumenta la humedad relativa del aire debido al paso por las vías respiratorias. Los sensores de humedad permiten identificar el patrón respiratorio de manera no invasiva, aunque son más sensibles a las condiciones ambientales.
 
 > ### Parte B
 En la presente sección, se aborda la etapa de adquisición temporizada en MATLAB y caracterización espectral de la señal respiratoria por medio del sistema desarrollado en la Parte A. Empleando el entorno de MATLAB, se registraron dos señales de 30 segundos en dos escenarios fisiológicos contrastantes; estado de **reposo** y durante **habla/lectura**. A partir de estas señales, se evalúa la necesidad de filtrado digital y se aplica la *Transformada Rápida de Fourier (FFT)* con el fin de identificar las frecuencias dominantes asociadas al patrón de respiración humana en cada condición. 
