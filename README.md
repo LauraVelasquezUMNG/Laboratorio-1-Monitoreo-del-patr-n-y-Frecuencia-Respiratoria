@@ -16,8 +16,11 @@ Analizar cómo el hecho de hablar o verbalizar afecta el ritmo y comportamiento 
 - Detectar tareas de habla o verbalización a partir del análisis del patrón respiratorio y/o su frecuencia.
 
 > ### Parte A
-### **1. 1. Revisión de la literatura**
+### **1. Revisión de la literatura**
 La respiración es el proceso fisiológico mediante el cual un organismo intercambia oxígeno (O₂) y dióxido de carbono (CO₂) con el medio ambiente. A nivel pulmonar, este intercambio ocurre en los alvéolos pulmonares a través de la membrana alveolocapilar, donde el O₂ inhalado difunde hacia el torrente sanguíneo y el CO₂ producido por el metabolismo celular difunde en sentido contrario para ser exhalado. El ciclo respiratorio completo comprende dos fases mecánicas: la inspiración, generada por la contracción del diafragma y los músculos intercostales externos (que expande la cavidad torácica y reduce la presión intrapulmonar por debajo de la atmosférica, permitiendo el ingreso de aire), y la espiración, que en condiciones de reposo es un proceso pasivo producido por el retroceso elástico del tejido pulmonar y de la caja torácica [1]
+
+#### Variables físicas involucradas en el proceso respiratorio
+Desde el punto de vista de la instrumentación biomédica, el proceso respiratorio puede caracterizarse mediante diferentes cambios físicos que reflejan la mecánica de la respiración. Las principales variables físicas involucradas en este proceso son:
 
 
 
