@@ -100,7 +100,7 @@ Tras inspeccionar visualmente los registros en el dominio del tiempo, se determi
 
 Por ende, la calidad directa de la adquisición permitió proceder con el análisis espectral sin requerir etapas de filtrado digital.
 
-### **4. Análisis en Frecuencia - Espectro Dominante**
+### **4. Análisis en el dominio de la Frecuencia**
 
 Para caracterizar el comportamiento espectral de las señales respiratorias, se procesaron los registros en reposo y durante el habla utilizando la _Transformada Rápida de Fourier (FFT)_ en MATLAB. A continuación, se presenta el procedimiento en MATLAB para obtener el espectro de potencia de la **señal de reposo:**
 
@@ -132,7 +132,30 @@ Este flujo se estructuró bajo las siguientes etapas:
 
 * **Cálculo del Espectro de Potencia:** Módulo de la FFT al cuadrado, normalizado entre el número total de puntos $\left(P(f)=\frac{|Y(f)|^2}{N}\right)$.
 
-* **Vector de frecuencias y simetría:** Construcción del eje de frecuencias partiendo de la frecuencia de muestreo $f_s=1000\ Hz$ y toma de la mitad positiva del espectro $(0$ a $\frac{f_s}{2}\ Hz)$. La función `floor()` redondea al 
+* **Vector de frecuencias y simetría:** Construcción del eje de frecuencias partiendo de la frecuencia de muestreo $f_s=1000\ Hz$ y toma de la mitad positiva del espectro $(0$ a $\frac{f_s}{2}\ Hz)$. La función `floor()` redondea hacia el entero más cercano menor o igual al número original, evitando un error al recortar el vector de frecuencias.
+
+Para visualizar la representación en el dominio de la frecuencia, se graficó la PSD delimitando el rango visual de $0$ a $5\ Hz$, intervalo que abarca la totalidad de la banda de interés respiratorio humano, como se muestra en seguida:
+
+```matlab
+figure;
+plot(f_rep, P_rep, 'LineWidth', 1.5);
+xlim([0 5]);
+grid on;
+xlabel('Frecuencia (Hz)');
+ylabel('Potencia');
+title('Espectro de potencia - Reposo');
+```
+Así, la representación en frecuencia de las señales estudiadas se muestra en el apartado siguiente.
+
+#### **REPOSO**
+
+<img width="1373" height="912" alt="image" src="https://github.com/user-attachments/assets/0b2b56a4-fa68-4e54-8ec4-071050c994d5" />
+
+#### **HABLA**
+
+<img width="1373" height="912" alt="image" src="https://github.com/user-attachments/assets/7b84b937-55dd-42ba-b3f7-86bec2d64c49" />
+
+### **5. Espectro Dominante - Frecuencia Respiratoria**
 
 > ### Parte C
 
