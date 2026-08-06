@@ -24,13 +24,13 @@ Desde el punto de vista de la instrumentación biomédica, el proceso respirator
 
 * **Flujo de aire respiratorio:** Corresponde al volumen de aire que entra y sale de los pulmones por unidad de tiempo. Su medición permite determinar parámetros como el volumen corriente, la frecuencia respiratoria y el patrón ventilatorio. Esta variable puede ser medida mediante sensores de flujo o variaciones térmicas (termistores) en la corriente de aire.
 
-* **Movimiento torácico y abdominal:** Durante la inspiración, la contracción del diafragma y de los músculos intercostales hacen incrementar el volumen de la cavidad torácica, produciendo la expansión del tórax y, en menor medida, del abdomen. Durante la espiración ocurre el proceso contrario. Esta es una de las variables más utilizadas para el monitoreo no invasivo de la respiración, ya que puede medirse mediante bandas elásticas con sensores piezoeléctricos, sensores piezorresistivos, sensores de deformación, sensores capacitivos o sensores flexibles.
+* **Movimiento torácico y abdominal:** Durante la inspiración, la contracción del diafragma y de los músculos intercostales hacen incrementar el volumen de la cavidad torácica, produciendo la expansión del tórax y, en menor medida, del abdomen. Durante la espiración ocurre el proceso contrario [1]. Esta es una de las variables más utilizadas para el monitoreo no invasivo de la respiración, ya que puede medirse mediante bandas elásticas con sensores piezoeléctricos, sensores piezorresistivos, sensores de deformación, sensores capacitivos o sensores flexibles.
 
 * **Presión respiratoria:** Durante el ciclo respiratorio se producen cambios de presión entre el interior de los pulmones y la atmósfera. Estas diferencias de presión permiten el desplazamiento del aire y pueden registrarse mediante sensores de presión absoluta o diferencial, especialmente en sistemas de ventilación mecánica o estudios de función pulmonar.
 
-* **Temperatura del aire respirado:** El aire exhalado posee una temperatura cercana a la corporal, mientras que el aire inspirado normalmente se encuentra a temperatura ambiente. Esta diferencia puede utilizarse para detectar cada ciclo respiratorio mediante termistores o sensores digitales de temperatura ubicados cerca de la nariz o la boca.
+* **Temperatura del aire respirado:** El aire exhalado posee una temperatura cercana a la corporal, mientras que el aire inspirado normalmente se encuentra a temperatura ambiente [3]. Esta diferencia puede utilizarse para detectar cada ciclo respiratorio mediante termistores o sensores digitales de temperatura ubicados cerca de la nariz o la boca.
 
-* **Concentración de dióxido de carbono (CO₂):** Corresponden las diferencias en concentración de CO₂ presentes en el ciclo respiratorio. El aire exhalado contiene una concentración de CO₂ considerablemente mayor que el aire inspirado. Esta variable se mide mediante capnografía y proporciona información sobre la ventilación alveolar.
+* **Concentración de dióxido de carbono (CO₂):** Corresponden las diferencias en concentración de CO₂ presentes en el ciclo respiratorio. El aire exhalado contiene una concentración de CO₂ considerablemente mayor que el aire inspirado. Esta variable se mide mediante capnografía y proporciona información sobre la ventilación alveolar [1].
 
 * **Humedad del aire exhalado:** Durante la espiración aumenta la humedad relativa del aire debido al paso por las vías respiratorias. Los sensores de humedad permiten identificar el patrón respiratorio de manera no invasiva, aunque son más sensibles a las condiciones ambientales.
 
@@ -38,25 +38,26 @@ Cada una de estas variables constituye en principio, una vía distinta para tran
 
 #### Ancho de banda de las señales respiratorias
 
-
+Considerando una frecuencia respiratoria normal de 12 a 20 respiraciones por minuto, la componente fundamental de la señal se encuentra aproximadamente entre 0,20 Hz y 0,33 Hz, por lo que se clasifica como una señal de baja frecuencia. Incluso en condiciones donde la respiración se acelera, como durante el ejercicio intenso (30–60 respiraciones por minuto), las componentes fisiológicas de interés generalmente permanecen por debajo de 1 Hz [3]. Durante tareas de verbalización o habla, el patrón respiratorio se vuelve más irregular, presentando pausas prolongadas, inspiraciones rápidas y espiraciones divididas para sostener el discurso. Esto genera componentes adicionales en el espectro de frecuencias; sin embargo, la mayor parte de la energía de la señal continúa concentrándose por debajo de 2–3 Hz. Asimismo, la señal respiratoria puede verse afectada por componentes asociados al movimiento del tórax, el flujo de aire, las vibraciones mecánicas, los artefactos por movimiento corporal y el ruido instrumental. Por estas razones, para la presente práctica se consideró un ancho de banda útil de 0,05 Hz a 5 Hz, el cual contiene la mayor parte de la información relevante para el análisis del patrón respiratorio.
 
 ### **2. Selección del sensor y construcción del sistema de adquisición**
 
+Para esta práctica se seleccionó el sensor MQ-135 debido a que permite detectar cambios en la composición del aire asociados al proceso respiratorio. Aunque este dispositivo está diseñado como un sensor de calidad del aire y es sensible a diferentes gases, responde a las variaciones en la concentración de dióxido de carbono (CO₂), la cual es considerablemente mayor durante la espiración que en la inspiración. Esta diferencia permite identificar cada ciclo respiratorio a partir de los cambios en la señal de salida del sensor.
 
+Adicionalmente, el MQ-135 cumple con los requerimientos de alimentación establecidos en la guía, ya que opera con un voltaje de 5 VDC. Asimismo, dispone de una salida analógica que puede conectarse directamente al sistema de adquisición de datos (DAQ), simplificando la etapa de digitalización de la señal.
+
+Con el fin de obtener una medición representativa y reducir la influencia de interferencias externas, el sensor se ubicó próximo a la nariz del sujeto de prueba, donde pudiera captar de manera directa el aire inhalado y exhalado sin necesidad de contacto con el cuerpo. Para la colocación del sensor se usó la estructura de una máscara de ventilación convencional, utilizando únicamente su carcasa como soporte físico. Sobre esta estructura se fijó el MQ-135 de manera que permaneciera expuesto al flujo de aire generado durante la inhalación y la exhalación. La salida analógica del sensor se conectó al DAQ, encargado de digitalizar la información y transferirla al computador para su adquisición en MATLAB, donde las señales fueron almacenadas para su posterior procesamiento y análisis, tanto en condición de reposo como durante el habla.
 
 ### **3. Visualización de la señal respiratoria en reposo y durante el habla**
 
 Una vez adquirida la señal respiratoria mediante el sistema descrito, se procedió a visualizar su comportamiento en el dominio del tiempo. En la Fig. 1 se presenta la señal correspondiente a la condición de reposo, donde el eje horizontal representa el tiempo transcurrido en segundos, durante la ventana de captura de 30 s establecida en la guía, mientras que el eje vertical corresponde al voltaje en voltios, de la señal respiratoria adquirida. De manera análoga, en la Fig. 2 se muestra la señal obtenida bajo la condición de habla, conservando los mismos ejes: tiempo en segundos en el eje horizontal y voltaje en voltios en el eje vertical.
 
-Fig. 1.
+Fig.1
+<img width="1402" height="912" alt="reposo" src="https://github.com/user-attachments/assets/a94e9512-2c3f-4cfe-9679-b4ad3d4fc18c" />
 
-<img width="1644" height="796" alt="image" src="https://github.com/user-attachments/assets/97b33e16-8a0c-44a8-86ae-12956881bec6" />
+Fig.2
+<img width="1402" height="912" alt="habla" src="https://github.com/user-attachments/assets/2607433a-35aa-498e-a462-6145de5659c9" />
 
-<br>
-
-Fig. 2.
-
-<img width="1644" height="796" alt="image" src="https://github.com/user-attachments/assets/58727685-8755-453f-8370-bf6dbe919594" />
 
 > ### Parte B
 En la presente sección, se aborda la etapa de adquisición temporizada en MATLAB y caracterización espectral de la señal respiratoria por medio del sistema desarrollado en la Parte A. Empleando el entorno de MATLAB, se registraron dos señales de 30 segundos en dos escenarios fisiológicos contrastantes; estado de **reposo** y durante **habla/lectura**. A partir de estas señales, se evalúa la necesidad de filtrado digital y se aplica la *Transformada Rápida de Fourier (FFT)* con el fin de identificar las frecuencias dominantes asociadas al patrón de respiración humana en cada condición. 
@@ -308,7 +309,9 @@ El sistema desarrollado, basado en un sensor MQ-135 acoplado a una máscara de n
 
 ### Referencias Bibliográficas
 
+[1] C. G. Lausted y A. T. Johnson, Respiratory System, en Biomedical Engineering Fundamentals, J. D. Bronzino, Ed. Boca Raton, FL, USA: CRC Press, 2006. https://doi.org/10.1201/9781420003857.
 [2] B. Conrad y P. Schönle, "Speech and respiration," Archiv für Psychiatrie und Nervenkrankheiten, vol. 226, no. 4, pp. 251–268, Abr. 1979. https://doi.org/10.1007/BF00342238.
+[3] Clifford, G. D., Azuaje, F., & McSharry, P. E. (2006). Advanced Methods and Tools for ECG Data Analysis. Artech House.
 
 ## **Recursos**
 
