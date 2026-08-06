@@ -44,7 +44,9 @@ Considerando una frecuencia respiratoria normal de 12 a 20 respiraciones por min
 
 Fig.1 
 
-<img width="500" height="374" alt="image" src="https://github.com/user-attachments/assets/2fff9722-697b-4ad4-9ccb-765b041fa397" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2fff9722-697b-4ad4-9ccb-765b041fa397" alt="Montaje experimental" width="500">
+</p>
 
 
 
