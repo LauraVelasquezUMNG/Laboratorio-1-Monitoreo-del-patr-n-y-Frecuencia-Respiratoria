@@ -49,9 +49,11 @@ Cada una de estas variables constituye en principio, una vía distinta para tran
 Una vez adquirida la señal respiratoria mediante el sistema descrito, se procedió a visualizar su comportamiento en el dominio del tiempo. En la Fig. 1 se presenta la señal correspondiente a la condición de reposo, donde el eje horizontal representa el tiempo transcurrido en segundos, durante la ventana de captura de 30 s establecida en la guía, mientras que el eje vertical corresponde al voltaje en voltios, de la señal respiratoria adquirida. De manera análoga, en la Fig. 2 se muestra la señal obtenida bajo la condición de habla, conservando los mismos ejes: tiempo en segundos en el eje horizontal y voltaje en voltios en el eje vertical.
 
 Fig.1
+\
 <img width="1402" height="912" alt="reposo" src="https://github.com/user-attachments/assets/a94e9512-2c3f-4cfe-9679-b4ad3d4fc18c" />
 
 Fig.2
+\
 <img width="1402" height="912" alt="habla" src="https://github.com/user-attachments/assets/2607433a-35aa-498e-a462-6145de5659c9" />
 
 Con el fin de identificar el contenido espectral de la señal respiratoria, se aplicó la Transformada de Fourier a cada una de las señales adquiridas, obteniendo así su representación en el dominio de la frecuencia. En la Fig. 3 se presenta la representación en frecuencia correspondiente a la condición de reposo, donde el eje horizontal indica la frecuencia en Hz, mientras que el eje vertical corresponde a la potencia de la señal, graficada en escala semilogarítmica para facilitar la visualización del amplio rango dinámico presente en el espectro. De forma equivalente, en la Fig. 4 se muestra la representación en frecuencia obtenida para la condición de habla, manteniendo los mismos ejes descritos anteriormente.
