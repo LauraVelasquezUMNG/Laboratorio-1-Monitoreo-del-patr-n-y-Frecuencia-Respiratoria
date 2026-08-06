@@ -46,7 +46,6 @@ Fig.1
 
 <img width="211" height="178" alt="sensro" src="https://github.com/user-attachments/assets/aa915089-e8a4-4fb6-9a15-d6eb2cf5a5e6" />
 
-
 Para esta práctica se seleccionó el sensor MQ-135 debido a que permite detectar cambios en la composición del aire asociados al proceso respiratorio. Aunque este dispositivo está diseñado como un sensor de calidad del aire y es sensible a diferentes gases, responde a las variaciones en la concentración de dióxido de carbono (CO₂), la cual es considerablemente mayor durante la espiración que en la inspiración. Esta diferencia permite identificar cada ciclo respiratorio a partir de los cambios en la señal de salida del sensor.
 
 Adicionalmente, el MQ-135 cumple con los requerimientos de alimentación establecidos en la guía, ya que opera con un voltaje de 5 VDC. Asimismo, dispone de una salida analógica que puede conectarse directamente al sistema de adquisición de datos (DAQ), simplificando la etapa de digitalización de la señal.
