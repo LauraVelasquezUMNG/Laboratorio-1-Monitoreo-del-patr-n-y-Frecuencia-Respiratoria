@@ -242,7 +242,7 @@ Los datos numéricos visualizados en el _Command Window_ de MATLAB para la frecu
 
 **Señales en el dominio del tiempo**
 
-En reposo, la señal respiratoria mostró ciclos definidos, con una amplitud que decrece progresivamente a lo largo de los 30 s de registro pero manteniendo una periodicidad clara entre picos y valles. Durante el habla, la señal presentó un comportamiento más irregular, con valles profundos y asimétricos, tramos de caída rápida seguidos de mesetas y repuntes, reflejo de las pausas para inspirar entre frases y de la espiración prolongada propia de la fonación.
+En reposo, la señal respiratoria mostró ciclos definidos, con una amplitud que decrece progresivamente a lo largo de los $30\ s$ de registro pero manteniendo una periodicidad clara entre picos y valles. Durante el habla, la señal presentó un comportamiento más irregular, con valles profundos y asimétricos, tramos de caída rápida seguidos de mesetas y repuntes, reflejo de las pausas para inspirar entre frases y de la espiración prolongada propia de la fonación.
 
 **Señales en el dominio de la frecuencia**
 
@@ -260,9 +260,9 @@ El espectro de potencia en reposo presentó un pico dominante estrecho, lo que i
 
 **Semejanzas y diferencias entre la frecuencia y relación inhalación/exhalación en reposo y durante la verbalización**
 
-Los resultados muestran una diferencia entre ambas condiciones, tanto en el dominio del tiempo como en el de la frecuencia. En reposo, la periodicidad de la señal se tradujo en un pico espectral dominante en 0.267 Hz, equivalente a 16 rpm, valor que se ubica dentro del rango eupneico normal para un adulto sano (12–20 rpm) y que refleja una relación inspiración/espiración simétrica, propia del control automático de la ventilación regulado por los centros bulbares en respuesta a las necesidades metabólicas de oxígeno y a la eliminación de dióxido de carbono [1].
+Los resultados muestran una diferencia entre ambas condiciones, tanto en el dominio del tiempo como en el de la frecuencia. En reposo, la periodicidad de la señal se tradujo en un pico espectral dominante en $0.267\ Hz$, equivalente a $16\ rpm$, valor que se ubica dentro del rango eupneico normal para un adulto sano ($12\text{–}20\ rpm$) y que refleja una relación inspiración/espiración simétrica, propia del control automático de la ventilación regulado por los centros bulbares en respuesta a las necesidades metabólicas de oxígeno y a la eliminación de dióxido de carbono [1].
 
-Durante el habla, la mayor variabilidad de la señal en el dominio del tiempo se correspondió con un espectro donde la energía se distribuyó entre un pico dominante en 0.067 Hz (4 rpm) y varios picos secundarios cercanos, a diferencia de la concentración espectral observada en reposo. La frecuencia respiratoria dominante se redujo a la cuarta parte durante el habla. 
+Durante el habla, la mayor variabilidad de la señal en el dominio del tiempo se correspondió con un espectro donde la energía se distribuyó entre un pico dominante en $0.067\ Hz$ ($4\ rpm$) y varios picos secundarios cercanos, a diferencia de la concentración espectral observada en reposo. La frecuencia respiratoria dominante se redujo a la cuarta parte durante el habla. 
 
 Esto no implica que el sujeto respire cuatro veces más lento en sentido literal, sino que cambia la unidad funcional del ciclo respiratorio: en reposo el ciclo está gobernado por la demanda metabólica, con inspiraciones y espiraciones de duración comparable, mientras que en el habla la duración de la inspiración disminuye y su velocidad aumenta, mientras que la espiración se prolonga considerablemente y su flujo de aire disminuye, patrón consistente con la literatura sobre respiración durante el habla [2]. 
 
@@ -284,7 +284,7 @@ Su alcance se ubica en aplicaciones de monitoreo de tendencias y comparación en
 
 **Pregunta 1: ¿Son los patrones respiratorios y frecuencias respiratorias iguales o diferentes en cada caso? ¿A qué se debe esto?**
 
-Son diferentes, tanto en frecuencia (16 rpm en reposo frente a 4 rpm en habla) como en morfología del ciclo. Esto se explica por un cambio en el mecanismo de control de la respiración: en reposo, la ventilación está regulada de forma automática por los centros respiratorios del bulbo raquídeo y la protuberancia, en función de las concentraciones de O₂ y CO₂ en sangre, produciendo ciclos simétricos y periódicos donde los tiempos de inspiración y espiración son comparables [1].
+Son diferentes, tanto en frecuencia ($16\ rpm$ en reposo frente a $4\ rpm$ en habla) como en morfología del ciclo. Esto se explica por un cambio en el mecanismo de control de la respiración: en reposo, la ventilación está regulada de forma automática por los centros respiratorios del bulbo raquídeo y la protuberancia, en función de las concentraciones de O₂ y CO₂ en sangre, produciendo ciclos simétricos y periódicos donde los tiempos de inspiración y espiración son comparables [1].
 
 Durante el habla, el control pasa a depender en gran medida de la corteza cerebral, que subordina la respiración a las exigencias del lenguaje: la duración de la inspiración disminuye y su velocidad aumenta, mientras que la espiración se prolonga y se modula mediante los músculos intercostales y abdominales para mantener un flujo de aire constante que sostenga la fonación durante toda la frase [2]. 
 
@@ -311,4 +311,3 @@ El sistema desarrollado, basado en un sensor MQ-135 acoplado a una máscara de n
 ### Referencias Bibliográficas
 
 [2] B. Conrad y P. Schönle, "Speech and respiration," Archiv für Psychiatrie und Nervenkrankheiten, vol. 226, no. 4, pp. 251–268, Abr. 1979. https://doi.org/10.1007/BF00342238.
-
