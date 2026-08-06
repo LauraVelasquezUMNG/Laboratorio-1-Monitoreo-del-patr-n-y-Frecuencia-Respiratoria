@@ -290,6 +290,7 @@ Durante el habla, el control pasa a depender en gran medida de la corteza cerebr
 
 Este cambio de control automático a control voluntario es la causa fisiológica principal de las diferencias observadas tanto en el dominio del tiempo, donde se aprecia la mayor variabilidad del ciclo, como en el dominio de la frecuencia, donde se observa la distribución de la energía espectral y la reducción de la frecuencia dominante.
 
+
 **Pregunta 2: ¿Cuáles serían las ventajas y desventajas de emplear múltiples sensores para el monitoreo del proceso respiratorio? ¿Cuáles podrían ser las razones?**
 
 El uso de múltiples sensores, por ejemplo combinando el sensor de gases empleado en esta práctica con un sensor de movimiento torácico o de flujo de aire, permitiría capturar simultáneamente distintas manifestaciones físicas de un mismo proceso fisiológico. La principal ventaja es la posibilidad de validar de manera cruzada la información: si dos sensores basados en principios físicos distintos coinciden en la frecuencia respiratoria detectada, la confiabilidad de la medición aumenta. 
