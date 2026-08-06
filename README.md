@@ -238,3 +238,55 @@ Los datos numéricos visualizados en el _Command Window_ de MATLAB para la frecu
 
 > ### Parte C
 
+### 1. Resultados Obtenidos
+
+**Señales en el dominio del tiempo**
+
+En reposo, la señal respiratoria mostró ciclos bien definidos, con una amplitud que decrece progresivamente a lo largo de los 30 s de registro pero manteniendo una periodicidad clara entre picos y valles, lo que sugiere un proceso ventilatorio estable durante la ventana de captura. Durante el habla, en cambio, la señal presentó un comportamiento mucho más dinámico, con valles profundos y asimétricos, tramos de caída rápida seguidos de mesetas y repuntes abruptos, reflejo directo de las pausas para inspirar entre frases y de la espiración prolongada y controlada propia de la fonación.
+
+**Señales en el dominio de la frecuencia**
+
+El espectro de potencia en reposo presentó un pico dominante claro y estrecho, indicando un proceso altamente periódico y con poca dispersión de energía en frecuencias vecinas. En el espectro correspondiente al habla, si bien también se identificó un pico dominante, la energía apareció distribuida entre este y varios picos secundarios cercanos, evidenciando la mayor riqueza espectral asociada a la estructura del habla (frases, pausas, énfasis).
+
+**Frecuencias obtenidas**
+
+| Condición | Frecuencia Dominante ($f_d$) | Frecuencia Respiratoria (rpm) |
+|-----------|:---:|:---:|
+| Reposo | 0.267 Hz | 16.00 |
+| Habla  | 0.067 Hz | 4.00 |
+
+---
+
+### 2. Análisis de Resultados
+
+**Semejanzas y diferencias entre la frecuencia y relación inhalación/exhalación en reposo y durante la verbalización**
+
+Los resultados evidencian una diferencia marcada entre ambas condiciones, tanto en el dominio del tiempo como en el de la frecuencia. En reposo, la periodicidad clara de la señal se tradujo en un pico espectral único y dominante en 0.267 Hz, equivalente a 16 rpm, valor que se ubica dentro del rango eupneico normal para un adulto sano (12–20 rpm) y que refleja una relación inspiración/espiración relativamente simétrica y estable, propia del control automático de la ventilación regulado por los centros bulbares en respuesta a las necesidades metabólicas de oxígeno y a la eliminación de dióxido de carbono.
+
+Durante el habla, la mayor dinámica de la señal en el dominio del tiempo se correspondió con un espectro donde la energía se distribuyó entre un pico dominante en 0.067 Hz (4 rpm) y varios picos secundarios cercanos, en contraste con la concentración espectral observada en reposo. Cuantitativamente, la frecuencia respiratoria dominante se redujo a la cuarta parte durante el habla. Esto no significa que el sujeto respire cuatro veces más lento en sentido literal, sino que cambia la unidad funcional del ciclo respiratorio: en reposo el ciclo está gobernado por la demanda metabólica, generando inspiraciones y espiraciones de duración comparable, mientras que en el habla el ciclo dominante pasa a estar gobernado por la duración de las frases y las pausas para respirar entre ellas, con inspiraciones breves y profundas seguidas de espiraciones considerablemente más prolongadas, lentas y controladas activamente por la musculatura intercostal y abdominal para sostener la emisión sonora. Esta reorganización temporal del ciclo, más que una simple reducción de la frecuencia, refleja un cambio cualitativo en la función que cumple la respiración: de ser un proceso puramente metabólico pasa a subordinarse, sin dejar de cumplir su función de intercambio gaseoso, a las exigencias motoras del habla.
+
+**Alcance del sistema para la caracterización del proceso respiratorio**
+
+El sistema desarrollado, basado en la medición de la concentración de gases exhalados mediante el sensor MQ-135 acoplado a una máscara de nebulización, demostró ser eficaz para capturar de forma no invasiva cambios generales en el patrón ventilatorio y estimar una frecuencia respiratoria dominante coherente con la fisiología esperada, permitiendo diferenciar con claridad estados fisiológicos distintos como el reposo y el habla, e incluso cuantificar objetivamente la magnitud de dicha diferencia mediante el análisis espectral.
+
+Este enfoque resulta particularmente útil como herramienta de monitoreo general y de aprendizaje en instrumentación biomédica, ya que permite observar de manera directa cómo distintas condiciones fisiológicas y comportamentales modifican el patrón respiratorio, sin requerir contacto invasivo con el sujeto. Su alcance natural se sitúa en aplicaciones de monitoreo de tendencias y comparación entre condiciones, como la realizada en esta práctica, donde el interés principal es identificar cambios relativos en la frecuencia y morfología respiratoria más que obtener mediciones absolutas de alta precisión clínica. Un desarrollo posterior orientado a aplicaciones de diagnóstico podría complementarse con variables adicionales, como el movimiento torácico o el flujo de aire, y con tiempos de registro más extensos, para ampliar el nivel de detalle y especificidad de la caracterización respiratoria.
+
+---
+
+### 3. Preguntas para la Discusión
+
+**Pregunta 1: ¿Son los patrones respiratorios y frecuencias respiratorias iguales o diferentes en cada caso? ¿A qué se debe esto?**
+
+Son diferentes, tanto en frecuencia (16 rpm en reposo frente a 4 rpm en habla) como en morfología del ciclo. Esto se explica por un cambio en el mecanismo de control de la respiración: en reposo, la ventilación está regulada de forma automática por los centros respiratorios del bulbo raquídeo y la protuberancia, en función de las concentraciones de O₂ y CO₂ en sangre, produciendo ciclos simétricos y periódicos donde los tiempos de inspiración y espiración son relativamente comparables. Durante el habla, el control pasa a depender en gran medida de la corteza cerebral, que subordina la respiración a las exigencias del lenguaje: la inspiración se vuelve breve y profunda para maximizar rápidamente el volumen de aire disponible, mientras que la espiración se prolonga considerablemente y se modula activamente mediante los músculos intercostales y abdominales para mantener un flujo de aire constante y controlado que sostenga la fonación durante toda la frase. Este cambio de control automático a control voluntario es la causa fisiológica principal de las diferencias observadas tanto en el dominio del tiempo, donde se aprecia la mayor dinámica del ciclo, como en el dominio de la frecuencia, donde se observa la distribución de la energía espectral y la reducción de la frecuencia dominante.
+
+**Pregunta 2: ¿Cuáles serían las ventajas y desventajas de emplear múltiples sensores para el monitoreo del proceso respiratorio? ¿Cuáles podrían ser las razones?**
+
+El uso de múltiples sensores, por ejemplo combinando el sensor de gases empleado en esta práctica con un sensor de movimiento torácico o de flujo de aire, permitiría capturar simultáneamente distintas manifestaciones físicas de un mismo proceso fisiológico. La principal ventaja es la posibilidad de validar cruzadamente la información: si dos sensores basados en principios físicos distintos coinciden en la frecuencia respiratoria detectada, la confiabilidad de la medición aumenta considerablemente. Además, distintos sensores son sensibles a distintos aspectos del ciclo respiratorio, ya que el movimiento torácico refleja mejor la amplitud y regularidad del ciclo mientras que la concentración de CO₂ refleja mejor el intercambio gaseoso propiamente dicho, por lo que su combinación permite una caracterización más completa y robusta del proceso, capaz de sustentar interpretaciones clínicas con mayor nivel de confianza.
+
+La principal desventaja es el aumento de la complejidad del sistema, pues se requiere sincronizar temporalmente varias señales, acondicionar cada una con su propio circuito de adquisición y desarrollar algoritmos que combinen adecuadamente la información de cada canal, lo que incrementa el costo, el consumo energético y el tamaño del dispositivo. La razón de fondo detrás de esta relación costo-beneficio es que cada variable física captura una dimensión parcial del proceso respiratorio (mecánica, térmica, química o de presión), por lo que la decisión de usar uno o varios sensores depende del equilibrio entre la robustez y completitud de la información requerida por la aplicación y la complejidad que el sistema puede asumir en términos de costo, tamaño y facilidad de uso.
+
+---
+
+### 4. Conclusiones
+
+
