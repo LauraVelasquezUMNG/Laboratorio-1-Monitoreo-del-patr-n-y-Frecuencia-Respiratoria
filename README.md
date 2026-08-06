@@ -44,7 +44,8 @@ Considerando una frecuencia respiratoria normal de 12 a 20 respiraciones por min
 
 Fig.1 
 
-<img width="500" height="374" alt="image" src="https://github.com/user-attachments/assets/874e2233-b579-4afc-bd04-8a90e6114c06" />
+<img width="500" height="374" alt="image" src="https://github.com/user-attachments/assets/2fff9722-697b-4ad4-9ccb-765b041fa397" />
+
 
 
 Para esta práctica se seleccionó el sensor MQ-135 debido a que permite detectar cambios en la composición del aire asociados al proceso respiratorio. Aunque este dispositivo está diseñado como un sensor de calidad del aire y es sensible a diferentes gases, responde a las variaciones en la concentración de dióxido de carbono (CO₂), la cual es considerablemente mayor durante la espiración que en la inspiración. Esta diferencia permite identificar cada ciclo respiratorio a partir de los cambios en la señal de salida del sensor.
