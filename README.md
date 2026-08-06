@@ -53,11 +53,12 @@ Con el fin de obtener una medición representativa y reducir la influencia de in
 Una vez adquirida la señal respiratoria mediante el sistema descrito, se procedió a visualizar su comportamiento en el dominio del tiempo. En la Fig. 1 se presenta la señal correspondiente a la condición de reposo, donde el eje horizontal representa el tiempo transcurrido en segundos, durante la ventana de captura de 30 s establecida en la guía, mientras que el eje vertical corresponde al voltaje en voltios, de la señal respiratoria adquirida. De manera análoga, en la Fig. 2 se muestra la señal obtenida bajo la condición de habla, conservando los mismos ejes: tiempo en segundos en el eje horizontal y voltaje en voltios en el eje vertical.
 
 Fig.1
-<img width="1402" height="912" alt="reposo" src="https://github.com/user-attachments/assets/a94e9512-2c3f-4cfe-9679-b4ad3d4fc18c" />
+
+<img width="1644" height="796" alt="image" src="https://github.com/user-attachments/assets/6d862384-e0bd-4b81-931d-7636453c9b53" />
 
 Fig.2
-<img width="1402" height="912" alt="habla" src="https://github.com/user-attachments/assets/2607433a-35aa-498e-a462-6145de5659c9" />
 
+<img width="1644" height="796" alt="image" src="https://github.com/user-attachments/assets/f97cea70-19cb-4786-afd5-4f0e764e1b90" />
 
 > ### Parte B
 En la presente sección, se aborda la etapa de adquisición temporizada en MATLAB y caracterización espectral de la señal respiratoria por medio del sistema desarrollado en la Parte A. Empleando el entorno de MATLAB, se registraron dos señales de 30 segundos en dos escenarios fisiológicos contrastantes; estado de **reposo** y durante **habla/lectura**. A partir de estas señales, se evalúa la necesidad de filtrado digital y se aplica la *Transformada Rápida de Fourier (FFT)* con el fin de identificar las frecuencias dominantes asociadas al patrón de respiración humana en cada condición. 
