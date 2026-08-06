@@ -64,9 +64,6 @@ Fig.4
 
 <img width="964" height="637" alt="fhabla" src="https://github.com/user-attachments/assets/91f794fc-7526-41ff-8cdd-6f90a2940113" />
 
-
-
-
 > ### Parte B
 En la presente sección, se aborda la etapa de adquisición temporizada en MATLAB y caracterización espectral de la señal respiratoria por medio del sistema desarrollado en la Parte A. Empleando el entorno de MATLAB, se registraron dos señales de 30 segundos en dos escenarios fisiológicos contrastantes; estado de **reposo** y durante **habla/lectura**. A partir de estas señales, se evalúa la necesidad de filtrado digital y se aplica la *Transformada Rápida de Fourier (FFT)* con el fin de identificar las frecuencias dominantes asociadas al patrón de respiración humana en cada condición. 
 
@@ -184,6 +181,8 @@ title('Espectro de potencia - Reposo');
 Así, la representación en frecuencia de las señales estudiadas se muestra en el apartado siguiente.
 
 #### **REPOSO**
+
+Fig. 3.
 
 <img width="1373" height="912" alt="image" src="https://github.com/user-attachments/assets/0b2b56a4-fa68-4e54-8ec4-071050c994d5" />
 
