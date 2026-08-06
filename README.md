@@ -319,3 +319,12 @@ El sistema desarrollado, basado en un sensor MQ-135 acoplado a una máscara de n
 ### Referencias Bibliográficas
 
 [2] B. Conrad y P. Schönle, "Speech and respiration," Archiv für Psychiatrie und Nervenkrankheiten, vol. 226, no. 4, pp. 251–268, Abr. 1979. https://doi.org/10.1007/BF00342238.
+
+### **Recursos**
+
+* **Código en MATLAB:** [Lab1InstrBios.m](Lab1InstrBios.m)
+
+* **Señal en Reposo:** [reposo.mat](reposo.mat)
+
+* **Señal en Habla:** [habla.mat](habla.mat)
+
