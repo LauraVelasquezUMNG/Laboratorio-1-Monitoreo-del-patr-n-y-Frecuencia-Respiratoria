@@ -317,7 +317,9 @@ El sistema desarrollado, basado en un sensor MQ-135 acoplado a una máscara de n
 ### Referencias Bibliográficas
 
 [1] C. G. Lausted y A. T. Johnson, Respiratory System, en Biomedical Engineering Fundamentals, J. D. Bronzino, Ed. Boca Raton, FL, USA: CRC Press, 2006. https://doi.org/10.1201/9781420003857.
+
 [2] B. Conrad y P. Schönle, "Speech and respiration," Archiv für Psychiatrie und Nervenkrankheiten, vol. 226, no. 4, pp. 251–268, Abr. 1979. https://doi.org/10.1007/BF00342238.
+
 [3] Clifford, G. D., Azuaje, F., & McSharry, P. E. (2006). Advanced Methods and Tools for ECG Data Analysis. Artech House.
 
 ## **Recursos**
