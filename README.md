@@ -306,7 +306,7 @@ La comparación entre las condiciones de reposo y habla permite concluir que el 
 
 De las variables físicas revisadas, el movimiento torácico y abdominal resulta ser una de las más adecuadas para detectar posibles anomalías respiratorias, al reflejar directamente la mecánica ventilatoria en amplitud y regularidad. Esto no resta valor a la concentración de CO₂ empleada en esta práctica, cuya utilidad radica en reflejar el intercambio gaseoso propiamente dicho, siendo un complemento dentro de un sistema de monitoreo más completo.
 
-El sistema desarrollado, basado en un sensor MQ-135 acoplado a una máscara de nebulización, cumplió su objetivo de evidenciar el efecto del habla sobre el patrón y la frecuencia respiratoria. El análisis espectral mediante FFT permitió pasar de una observación cualitativa en el tiempo a una caracterización cuantitativa del contenido frecuencial, mostrando que un sistema de instrumentación simple puede aportar información fisiológicamente coherente sobre el proceso respiratorio y su relación con el habla.
+El sistema desarrollado, basado en un sensor MQ-135 acoplado a una máscara de nebulización, cumplió su objetivo de evidenciar el efecto del habla sobre el patrón y la frecuencia respiratoria. Aunado a esto, el análisis espectral mediante FFT permitió pasar de una observación cualitativa en el tiempo a una caracterización cuantitativa del contenido frecuencial.
 
 
 ### Referencias Bibliográficas
