@@ -246,7 +246,7 @@ En reposo, la señal respiratoria mostró ciclos bien definidos, con una amplitu
 
 **Señales en el dominio de la frecuencia**
 
-El espectro de potencia en reposo presentó un pico dominante claro y estrecho, indicando un proceso altamente periódico y con poca dispersión de energía en frecuencias vecinas. En el espectro correspondiente al habla, si bien también se identificó un pico dominante, la energía apareció distribuida entre este y varios picos secundarios cercanos, evidenciando la mayor riqueza espectral asociada a la estructura del habla (frases, pausas, énfasis).
+El espectro de potencia en reposo presentó un pico dominante claro y estrecho, indicando un proceso altamente periódico y con poca dispersión de energía en frecuencias cercanas. En el espectro correspondiente al habla, si bien también se identificó un pico dominante, la energía apareció distribuida entre este y varios picos secundarios próximos, evidenciando la mayor riqueza espectral asociada a la estructura del habla (frases, pausas, énfasis).
 
 **Frecuencias obtenidas**
 
