@@ -267,7 +267,7 @@ Durante el habla, la mayor variabilidad de la señal en el dominio del tiempo se
 Esto no implica que el sujeto respire cuatro veces más lento en sentido literal, sino que cambia la unidad funcional del ciclo respiratorio: en reposo el ciclo está gobernado por la demanda metabólica, con inspiraciones y espiraciones de duración comparable, mientras que en el habla la duración de la inspiración disminuye y su velocidad aumenta, mientras que la espiración se prolonga considerablemente y su flujo de aire disminuye, patrón consistente con la literatura sobre respiración durante el habla [2]. Esta reorganización temporal del ciclo refleja un cambio en la función que cumple la respiración: de un proceso gobernado por la demanda metabólica pasa a subordinarse, sin dejar de cumplir su función de intercambio gaseoso, a las exigencias motoras del habla.
 
 > [!NOTE]
-> El cambio en la duración y velocidad de la inspiración y la espiración durante el habla, descrito en esta sección, coincide con lo reportado por Conrad y Schönle [2], quienes documentaron este mismo patrón mediante neurografía torácica.
+> El cambio en la duración y velocidad de la inspiración y la espiración durante el habla, descrito en esta sección, coincide con lo reportado por Conrad y Schönle [2], quienes documentaron este mismo patrón mediante neumografía torácica.
 
 **Alcance del sistema para la caracterización del proceso respiratorio**
 
