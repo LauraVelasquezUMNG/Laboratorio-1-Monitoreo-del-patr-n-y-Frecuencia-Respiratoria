@@ -188,6 +188,8 @@ Fig. 3.
 
 #### **HABLA**
 
+Fig. 4.
+
 <img width="1373" height="912" alt="image" src="https://github.com/user-attachments/assets/7b84b937-55dd-42ba-b3f7-86bec2d64c49" />
 
 ### **5. Espectro Dominante - Frecuencia Respiratoria**
