@@ -52,6 +52,8 @@ Fig. 1.
 
 <img width="1402" height="912" alt="reposo" src="https://github.com/user-attachments/assets/a94e9512-2c3f-4cfe-9679-b4ad3d4fc18c" />
 
+<br>
+
 Fig. 2.
 
 <img width="1402" height="912" alt="habla" src="https://github.com/user-attachments/assets/2607433a-35aa-498e-a462-6145de5659c9" />
