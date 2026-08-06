@@ -58,16 +58,6 @@ Fig. 2.
 
 <img width="1644" height="796" alt="image" src="https://github.com/user-attachments/assets/58727685-8755-453f-8370-bf6dbe919594" />
 
-Con el fin de identificar el contenido espectral de la señal respiratoria, se aplicó la Transformada de Fourier a cada una de las señales adquiridas, obteniendo así su representación en el dominio de la frecuencia. En la Fig. 3 se presenta la representación en frecuencia correspondiente a la condición de reposo, donde el eje horizontal indica la frecuencia en Hz, mientras que el eje vertical corresponde a la potencia de la señal, graficada en escala semilogarítmica para facilitar la visualización del amplio rango dinámico presente en el espectro. De forma equivalente, en la Fig. 4 se muestra la representación en frecuencia obtenida para la condición de habla, manteniendo los mismos ejes descritos anteriormente.
-
-Fig.3
-
-<img width="964" height="637" alt="freposo" src="https://github.com/user-attachments/assets/afde5168-9ed6-42f5-b8ae-ae2f559c16b7" />
-
-Fig.4 
-
-<img width="964" height="637" alt="fhabla" src="https://github.com/user-attachments/assets/91f794fc-7526-41ff-8cdd-6f90a2940113" />
-
 > ### Parte B
 En la presente sección, se aborda la etapa de adquisición temporizada en MATLAB y caracterización espectral de la señal respiratoria por medio del sistema desarrollado en la Parte A. Empleando el entorno de MATLAB, se registraron dos señales de 30 segundos en dos escenarios fisiológicos contrastantes; estado de **reposo** y durante **habla/lectura**. A partir de estas señales, se evalúa la necesidad de filtrado digital y se aplica la *Transformada Rápida de Fourier (FFT)* con el fin de identificar las frecuencias dominantes asociadas al patrón de respiración humana en cada condición. 
 
@@ -320,7 +310,7 @@ El sistema desarrollado, basado en un sensor MQ-135 acoplado a una máscara de n
 
 [2] B. Conrad y P. Schönle, "Speech and respiration," Archiv für Psychiatrie und Nervenkrankheiten, vol. 226, no. 4, pp. 251–268, Abr. 1979. https://doi.org/10.1007/BF00342238.
 
-### **Recursos**
+## **Recursos**
 
 * **Código en MATLAB:** [Lab1InstrBios.m](Lab1InstrBios.m)
 
