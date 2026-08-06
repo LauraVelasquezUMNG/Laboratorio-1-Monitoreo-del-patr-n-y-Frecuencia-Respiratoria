@@ -42,6 +42,11 @@ Considerando una frecuencia respiratoria normal de 12 a 20 respiraciones por min
 
 ### **2. Selección del sensor y construcción del sistema de adquisición**
 
+Fig.1 
+
+<img width="211" height="178" alt="sensro" src="https://github.com/user-attachments/assets/aa915089-e8a4-4fb6-9a15-d6eb2cf5a5e6" />
+
+
 Para esta práctica se seleccionó el sensor MQ-135 debido a que permite detectar cambios en la composición del aire asociados al proceso respiratorio. Aunque este dispositivo está diseñado como un sensor de calidad del aire y es sensible a diferentes gases, responde a las variaciones en la concentración de dióxido de carbono (CO₂), la cual es considerablemente mayor durante la espiración que en la inspiración. Esta diferencia permite identificar cada ciclo respiratorio a partir de los cambios en la señal de salida del sensor.
 
 Adicionalmente, el MQ-135 cumple con los requerimientos de alimentación establecidos en la guía, ya que opera con un voltaje de 5 VDC. Asimismo, dispone de una salida analógica que puede conectarse directamente al sistema de adquisición de datos (DAQ), simplificando la etapa de digitalización de la señal.
@@ -50,13 +55,13 @@ Con el fin de obtener una medición representativa y reducir la influencia de in
 
 ### **3. Visualización de la señal respiratoria en reposo y durante el habla**
 
-Una vez adquirida la señal respiratoria mediante el sistema descrito, se procedió a visualizar su comportamiento en el dominio del tiempo. En la Fig. 1 se presenta la señal correspondiente a la condición de reposo, donde el eje horizontal representa el tiempo transcurrido en segundos, durante la ventana de captura de 30 s establecida en la guía, mientras que el eje vertical corresponde al voltaje en voltios, de la señal respiratoria adquirida. De manera análoga, en la Fig. 2 se muestra la señal obtenida bajo la condición de habla, conservando los mismos ejes: tiempo en segundos en el eje horizontal y voltaje en voltios en el eje vertical.
+Una vez adquirida la señal respiratoria mediante el sistema descrito, se procedió a visualizar su comportamiento en el dominio del tiempo. En la Fig. 2 se presenta la señal correspondiente a la condición de reposo, donde el eje horizontal representa el tiempo transcurrido en segundos, durante la ventana de captura de 30 s establecida en la guía, mientras que el eje vertical corresponde al voltaje en voltios, de la señal respiratoria adquirida. De manera análoga, en la Fig. 3 se muestra la señal obtenida bajo la condición de habla, conservando los mismos ejes: tiempo en segundos en el eje horizontal y voltaje en voltios en el eje vertical.
 
-Fig.1
+Fig.2
 
 <img width="1644" height="796" alt="image" src="https://github.com/user-attachments/assets/6d862384-e0bd-4b81-931d-7636453c9b53" />
 
-Fig.2
+Fig.3
 
 <img width="1644" height="796" alt="image" src="https://github.com/user-attachments/assets/f97cea70-19cb-4786-afd5-4f0e764e1b90" />
 
@@ -178,13 +183,13 @@ Así, la representación en frecuencia de las señales estudiadas se muestra en 
 
 #### **REPOSO**
 
-Fig. 3.
+Fig. 4.
 
 <img width="1373" height="912" alt="image" src="https://github.com/user-attachments/assets/0b2b56a4-fa68-4e54-8ec4-071050c994d5" />
 
 #### **HABLA**
 
-Fig. 4.
+Fig. 5.
 
 <img width="1373" height="912" alt="image" src="https://github.com/user-attachments/assets/7b84b937-55dd-42ba-b3f7-86bec2d64c49" />
 
