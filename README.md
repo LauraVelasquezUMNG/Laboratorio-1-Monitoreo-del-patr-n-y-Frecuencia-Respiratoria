@@ -297,7 +297,9 @@ El uso de múltiples sensores, por ejemplo combinando el sensor de gases emplead
 
 Además, distintos sensores son sensibles a distintos aspectos del ciclo respiratorio, debido a que el movimiento torácico refleja la amplitud y regularidad del ciclo, mientras que la concentración de CO₂ refleja el intercambio gaseoso, por lo que su combinación permite una caracterización más completa del proceso.
 
-La principal desventaja es el aumento de la complejidad del sistema, pues se requiere sincronizar temporalmente varias señales, acondicionar cada una con su propio circuito de adquisición y desarrollar algoritmos que combinen la información de cada canal, lo que incrementa el costo, el consumo energético y el tamaño del dispositivo. La razón de fondo detrás de esta relación costo-beneficio es que cada variable física captura una dimensión parcial del proceso respiratorio (mecánica, térmica, química o de presión), por lo que la decisión de usar uno o varios sensores depende del equilibrio entre la información requerida por la aplicación y la complejidad que el sistema puede asumir.
+La principal desventaja es el aumento de la complejidad del sistema, pues se requiere sincronizar temporalmente varias señales, acondicionar cada una con su propio circuito de adquisición y desarrollar algoritmos que combinen la información de cada canal, lo que incrementa el costo, el consumo energético y el tamaño del dispositivo. 
+
+En última instancia, ninguna variable física por sí sola representa completamente el proceso respiratorio, debido a que cada una aporta una perspectiva parcial (mecánica, térmica, química o de presión). Por ello, la elección entre usar uno o varios sensores depende del equilibrio entre la información que requiere la aplicación y la complejidad que el sistema puede asumir.
 
 
 ### 4. Conclusiones
