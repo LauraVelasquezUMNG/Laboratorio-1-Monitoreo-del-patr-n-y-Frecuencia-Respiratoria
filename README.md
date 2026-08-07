@@ -42,7 +42,7 @@ Considerando una frecuencia respiratoria normal de 12 a 20 respiraciones por min
 
 ### **2. Selección del sensor y construcción del sistema de adquisición**
 
-Fig.1 
+Fig. 1.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2fff9722-697b-4ad4-9ccb-765b041fa397" alt="Montaje experimental" width="500">
@@ -57,16 +57,16 @@ Con el fin de obtener una medición representativa y reducir la influencia de in
 
 ### **3. Visualización de la señal respiratoria en reposo y durante el habla**
 
-Una vez adquirida la señal respiratoria mediante el sistema descrito, se procedió a visualizar su comportamiento en el dominio del tiempo. En la Fig. 2 se presenta la señal correspondiente a la condición de reposo, donde el eje horizontal representa el tiempo transcurrido en segundos, durante la ventana de captura de 30 s establecida en la guía, mientras que el eje vertical corresponde al voltaje en voltios, de la señal respiratoria adquirida. De manera análoga, en la Fig. 3 se muestra la señal obtenida bajo la condición de habla, conservando los mismos ejes: tiempo en segundos en el eje horizontal y voltaje en voltios en el eje vertical.
+Una vez adquirida la señal respiratoria mediante el sistema descrito, se procedió a visualizar su comportamiento en el dominio del tiempo. En la Fig. 2 se presenta la señal correspondiente a la condición de reposo, donde el eje horizontal representa el tiempo transcurrido en segundos, durante la ventana de captura de $30\ s$ establecida en la guía, mientras que el eje vertical corresponde al voltaje en voltios, de la señal respiratoria adquirida. De manera análoga, en la Fig. 3 se muestra la señal obtenida bajo la condición de habla, conservando los mismos ejes: tiempo en segundos en el eje horizontal y voltaje en voltios en el eje vertical.
 
 > [!NOTE]
 > La **señal de habla** se invirtió para que su forma correspondiera al patrón de inhalación y exhalación del sujeto, multiplicando el vector por $-1$.
 
-Fig.2
+Fig. 2.
 
 <img width="1644" height="796" alt="image" src="https://github.com/user-attachments/assets/6d862384-e0bd-4b81-931d-7636453c9b53" />
 
-Fig.3
+Fig. 3.
 
 <img width="1651" height="796" alt="image" src="https://github.com/user-attachments/assets/7ca62a86-80fe-4ce4-b908-c49418a8811e" />
 
@@ -99,7 +99,7 @@ senal_reposo = reposo1.Variables;
 t_habla = seconds(habla1.Time - habla1.Time(1));   % Tiempo en segundos desde t = 0
 senal_habla = habla1.Variables;
 ```
-La propiedad `.Time` contiene las marcas de tiempo absolutas asignadas durante la adquisición. Para iniciar en $t=0s$, se resta el tiempo registrado en la primera posición `Time(1)`. Finalmente, `seconds()` convierte la diferencia en un vector de valores numéricos expresados en segundos. La señal se encuentra almacenada en la propiedad `.Variables`, por lo que se extrae y se asigna a un vector diferente.
+La propiedad `.Time` contiene las marcas de tiempo absolutas asignadas durante la adquisición. Para iniciar en $t=0\ s$, se resta el tiempo registrado en la primera posición `Time(1)`. Finalmente, `seconds()` convierte la diferencia en un vector de valores numéricos expresados en segundos. La señal se encuentra almacenada en la propiedad `.Variables`, por lo que se extrae y se asigna a un vector diferente.
 
 Una vez extraídos y normalizados los vectores de tiempo y amplitud, se procede a garantizar la persistencia de los datos sin depender de la sesión activa de MATLAB.
 
