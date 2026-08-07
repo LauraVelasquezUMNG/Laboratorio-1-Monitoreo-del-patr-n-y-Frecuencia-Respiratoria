@@ -9,6 +9,9 @@ fs = 1000;   % Frecuencia de muestreo (Hz)
 load('reposo.mat');
 load('habla.mat');
 
+% Invertir señal habla
+senal_habla = senal_habla*-1;
+
 %% Graficar señal REPOSO
 
 figure;
